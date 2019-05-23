@@ -1,0 +1,22 @@
+{
+  "name": "node-lambda-package",
+  "version": "1.0.0",
+  "description": "Sample project to create a package for AWS Lambda",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postpack" : "node scripts/repackage.js; rm *.tgz"
+  },
+  "author": "Matheus Silva <matheus-b-silva@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tar-to-zip": "^2.0.0"
+  },
+  "bundleDependencies": [
+  ],
+  "files": [
+    "src/*"
+  ]
+}
